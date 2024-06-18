@@ -1,0 +1,35 @@
+.navbar-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links {
+  text-decoration: none;
+  color: #43515e;
+  font-size: 24px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: #df4846;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+.nav-links:hover::after {
+  transform: scaleX(1);
+}
+.request-logo {
+  width: 30px;
+}
