@@ -7,6 +7,9 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav className="nav-links-container">
+        <Link to="/main" className="nav-links">
+          Pagrindinis
+        </Link>
         <Link to="/engines" className="nav-links">
           Varikliai
         </Link>
