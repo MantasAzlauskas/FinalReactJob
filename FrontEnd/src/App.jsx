@@ -9,6 +9,7 @@ import Spareparts from "./Pages/Spareparts";
 import Repair from "./Pages/Repair";
 import Contacts from "./Pages/Contacts";
 import Contactus from "./Pages/Contactus";
+import Request from "./Pages/Request";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/repair" element={<Repair />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/contactus" element={<Contactus />} />
+        <Route path="/requests" element={<Request />} />
       </Routes>
     </Router>
   );

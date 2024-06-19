@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import requestlogo from "../../../src/assests/Navbar/repair-mechanism-1.png";
+import requestlogo from "../../../src/assests/Navbar/logblack.png";
 import "../Header/Styles/Navbar.css";
 
 const Navbar = () => {
