@@ -1,0 +1,73 @@
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.form-container {
+  width: 30%;
+  text-align: center;
+}
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #43515e;
+  background-color: transparent;
+  font-size: 15px;
+  border-radius: 10px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  cursor: text;
+  transition: 0.2s;
+}
+button {
+  padding: 10px 0;
+  color: white;
+  outline: none;
+  background: #43515e;
+  border: #43515e;
+  border-radius: 10px;
+  width: 70%;
+  cursor: pointer;
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -29px;
+  font-size: 14px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .input-group {
+  flex-basis: 45%;
+}
+
+.contactus-text {
+  width: 350px;
+  text-align: left;
+  font-size: 22px;
+}
+.contactus-logo {
+  width: 40%;
+  max-width: 300px;
+}
+.contactus-logo img {
+  max-width: 100%;
+}

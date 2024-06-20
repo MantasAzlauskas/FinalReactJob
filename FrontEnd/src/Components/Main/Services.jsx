@@ -7,46 +7,42 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="carousell-main-container">
+    <div className="services-main-container">
       <h1>Paslaugos</h1>
       <div className="img-container">
         <article className="img-article">
-          <img src={Engine} alt="enginephoto" className="img-card" />
-
+          <Link to="/engines">
+            <img src={Engine} alt="enginephoto" className="img-card" />
+          </Link>
           <div className="img-info">
             <span className="img-description">Įvairiausi varikliai</span>
             <h2 className="img-title">Varikliai</h2>
-            <Link to="/engines" className="img-btn">
-              Read More
-            </Link>
           </div>
         </article>
 
         <article className="img-article">
-          <img src={SpareParts} alt="sparepartsphoto" className="img-card" />
+          <Link to="/spareparts">
+            <img src={SpareParts} alt="sparepartsphoto" className="img-card" />
+          </Link>
 
           <div className="img-info">
             <span className="img-description">Įvairiausios dalys</span>
             <h2 className="img-title">Dalys</h2>
-            <Link to="/spareparts" className="img-btn">
-              Read More
-            </Link>
           </div>
         </article>
 
         <article className="img-article">
-          <img
-            src={EngineRepair}
-            alt="enginerepairphoto"
-            className="img-card"
-          />
+          <Link to="/repair">
+            <img
+              src={EngineRepair}
+              alt="enginerepairphoto"
+              className="img-card"
+            />
+          </Link>
 
           <div className="img-info">
             <span className="img-description">Bet koks remontas</span>
             <h2 className="img-title">Remontas</h2>
-            <Link to="/repair" className="img-btn">
-              Read More
-            </Link>
           </div>
         </article>
       </div>
