@@ -28,7 +28,7 @@ video {
   line-height: 40px;
 }
 .content p {
-  background-color: rgba(223, 72, 70, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 20px;
   border-radius: 10px;
   color: white;
@@ -50,7 +50,7 @@ video {
   right: 20px;
   padding: 10px 15px;
   font-size: 20px;
-  background-color: red;
+  background-color: rgb(223, 72, 70);
   color: white;
   border: none;
   border-radius: 5px;

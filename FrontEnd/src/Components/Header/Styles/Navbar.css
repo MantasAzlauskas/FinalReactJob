@@ -30,6 +30,6 @@
 .nav-links:hover::after {
   transform: scaleX(1);
 }
-.request-logo {
-  width: 25px;
+.navbar-icon {
+  color: black;
 }

@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin: 40px 0 40px 0;
 }
 .form-container {
   width: 30%;
@@ -19,7 +19,7 @@ textarea {
   width: 100%;
   padding: 10px;
   outline: 0;
-  border: 1px solid #43515e;
+  border: 1px solid #df4846;
   background-color: transparent;
   font-size: 15px;
   border-radius: 10px;
@@ -35,13 +35,18 @@ label {
 }
 button {
   padding: 10px 0;
-  color: white;
+  color: #df4846;
   outline: none;
-  background: #43515e;
-  border: #43515e;
+  background: white;
+  border: 1px solid #df4846;
   border-radius: 10px;
   width: 70%;
   cursor: pointer;
+}
+button:hover {
+  border: 1px solid #43515e;
+  background-color: #43515e;
+  color: white;
 }
 input:focus ~ label,
 input:valid ~ label,
@@ -70,4 +75,7 @@ textarea:valid ~ label {
 }
 .contactus-logo img {
   max-width: 100%;
+}
+.contactus-icon {
+  color: #df4846;
 }

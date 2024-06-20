@@ -10,13 +10,14 @@ import Repair from "./Pages/Repair";
 import Contacts from "./Pages/Contacts";
 import Contactus from "./Pages/Contactus";
 import Request from "./Pages/Request";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/main" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/engines" element={<Engines />} />
         <Route path="/spareparts" element={<Spareparts />} />
         <Route path="/repair" element={<Repair />} />
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/requests" element={<Request />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

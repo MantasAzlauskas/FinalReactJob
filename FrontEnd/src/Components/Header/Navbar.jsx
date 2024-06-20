@@ -1,13 +1,15 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import requestlogo from "../../../src/assests/Navbar/logblack.png";
+// import requestlogo from "../../../src/assests/Navbar/logblack.png";
 import "../Header/Styles/Navbar.css";
 
 const Navbar = () => {
   return (
     <div className="navbar-container">
       <nav className="nav-links-container">
-        <Link to="/main" className="nav-links">
+        <Link to="/" className="nav-links">
           Pagrindinis
         </Link>
         <Link to="/engines" className="nav-links">
@@ -27,7 +29,7 @@ const Navbar = () => {
         </Link>
       </nav>
       <Link to="/requests">
-        <img className="request-logo" src={requestlogo} alt="requestlogo" />
+        <FontAwesomeIcon icon={faUser} className="navbar-icon" />
       </Link>
     </div>
   );

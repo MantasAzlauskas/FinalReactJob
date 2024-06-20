@@ -1,4 +1,13 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faPhone,
+  faEnvelope,
+  faComments,
+  faPaperPlane,
+} from "@fortawesome/free-solid-svg-icons";
+
 import logo from "../../../src/assests/Header/Logo.png";
 import "../Main/Styles/Contactusform.css";
 
@@ -10,23 +19,38 @@ const Contactusform = () => {
         <div className="row">
           <div className="input-group">
             <input type="text" id="name" required />
-            <label htmlFor="name">Vardas Pavardė</label>
+            <label htmlFor="name">
+              <FontAwesomeIcon icon={faUser} className="contactus-icon" />{" "}
+              Vardas Pavardė
+            </label>
           </div>
           <div className="input-group">
             <input type="number" id="number" required />
-            <label htmlFor="number">Tel. Nr.</label>
+            <label htmlFor="number">
+              <FontAwesomeIcon icon={faPhone} className="contactus-icon" /> Tel.
+              Nr.
+            </label>
           </div>
         </div>
 
         <div className="input-group">
           <input type="email" id="email" required />
-          <label htmlFor="email">El. paštas</label>
+          <label htmlFor="email">
+            <FontAwesomeIcon icon={faEnvelope} className="contactus-icon" /> El.
+            paštas
+          </label>
         </div>
         <div className="input-group">
           <textarea id="message" rows="2" required></textarea>
-          <label htmlFor="message">Jūsų užklausa</label>
+          <label htmlFor="message">
+            <FontAwesomeIcon icon={faComments} className="contactus-icon" />{" "}
+            Jūsų užklausa
+          </label>
         </div>
-        <button type="submit">Siųsti</button>
+        <button type="submit">
+          <FontAwesomeIcon icon={faPaperPlane} className="contactus-icon" />{" "}
+          Siųsti
+        </button>
       </form>
       <div className="request-form">
         <h1>Užklausos forma</h1>

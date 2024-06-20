@@ -1,0 +1,55 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info,
+.working-hours,
+.social-links {
+  flex: 1;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #df4846;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #df4846;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+.copyright {
+  text-align: center;
+}
