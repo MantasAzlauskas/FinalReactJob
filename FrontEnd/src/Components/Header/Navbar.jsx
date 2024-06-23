@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-// import requestlogo from "../../../src/assests/Navbar/logblack.png";
 import "../Header/Styles/Navbar.css";
 
 const Navbar = () => {
@@ -29,7 +28,11 @@ const Navbar = () => {
         </Link>
       </nav>
       <Link to="/requests">
-        <FontAwesomeIcon icon={faUser} className="navbar-icon" />
+        <FontAwesomeIcon
+          icon={faUser}
+          className="navbar-icon"
+          aria-label="login"
+        />
       </Link>
     </div>
   );

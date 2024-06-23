@@ -3,22 +3,24 @@
   place-items: center;
   padding-top: 1rem;
   padding-bottom: 4rem;
-  background: rgb(20, 17, 18, 0.5);
+  background: #cdb7a1;
+}
 
-  color: white;
-}
-h1 {
-  margin-top: 0;
-}
 .img-container {
-  display: grid;
-  column-gap: 6rem;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  width: 87%;
+  justify-content: space-evenly;
+  padding: 30px 0px 40px 0px;
+  background-color: #f5f2ed;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
 .img-article {
   position: relative;
   overflow: hidden;
 }
+
 .img-card {
   width: 300px;
   height: 100%;
@@ -26,10 +28,9 @@ h1 {
 }
 
 .img-info {
-  width: 200px;
-  background-color: rgb(20, 17, 18, 0.9);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px rgb(223, 72, 70);
+  width: 100px;
+  background-color: rgba(223, 72, 70, 0.9);
+  box-shadow: 0 8px 24px #f9f9f9;
   border-radius: 1rem;
   position: absolute;
   bottom: -9rem;
@@ -41,30 +42,37 @@ h1 {
   padding-inline: 2.5rem;
   text-align: center;
 }
+
 .img-description {
   display: block;
   margin-bottom: 0.25rem;
   color: white;
 }
+
 .img-title {
   color: white;
   margin-bottom: 0.75rem;
 }
+
 .img-article:hover .img-info {
-  animation: show-data 1s forwards;
+  animation: services-show-data 1s forwards;
   opacity: 1;
   transition: opacity 0.3s;
 }
+
 .img-article:hover {
-  animation: remove-overflow 2s forwards;
+  animation: services-remove-overflow 2s forwards;
 }
+
 .img-article:not(:hover) {
-  animation: show-overflow 2s forwards;
+  animation: services-show-overflow 2s forwards;
 }
+
 .img-article:not(:hover) .img-info {
-  animation: remove-data 1s forwards;
+  animation: services-remove-data 1s forwards;
 }
-@keyframes show-data {
+
+@keyframes services-show-data {
   50% {
     transform: translateY(-10rem);
   }
@@ -72,13 +80,14 @@ h1 {
     transform: translateY(-7rem);
   }
 }
-@keyframes remove-overflow {
+
+@keyframes services-remove-overflow {
   to {
     overflow: initial;
   }
 }
 
-@keyframes remove-data {
+@keyframes services-remove-data {
   0% {
     transform: translateY(-7rem);
   }
@@ -90,7 +99,7 @@ h1 {
   }
 }
 
-@keyframes show-overflow {
+@keyframes services-show-overflow {
   0% {
     overflow: initial;
     pointer-events: none;

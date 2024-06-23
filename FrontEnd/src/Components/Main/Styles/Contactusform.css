@@ -1,3 +1,8 @@
+.main-hero-container h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
 .hero {
   width: 100%;
   height: auto;
@@ -9,6 +14,10 @@
 .form-container {
   width: 30%;
   text-align: center;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.8);
+  background-color: #cdb7a1;
 }
 .input-group {
   margin-bottom: 20px;
@@ -20,7 +29,7 @@ textarea {
   padding: 10px;
   outline: 0;
   border: 1px solid #df4846;
-  background-color: transparent;
+  background-color: #f5f2ed;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -37,16 +46,16 @@ button {
   padding: 10px 0;
   color: #df4846;
   outline: none;
-  background: white;
+  background: #f5f2ed;
   border: 1px solid #df4846;
   border-radius: 10px;
   width: 70%;
   cursor: pointer;
 }
 button:hover {
-  border: 1px solid #43515e;
-  background-color: #43515e;
-  color: white;
+  border: 1px solid #df4846;
+  background-color: #f0f8ff;
+  color: #df4846;
 }
 input:focus ~ label,
 input:valid ~ label,
@@ -67,15 +76,26 @@ textarea:valid ~ label {
 .contactus-text {
   width: 350px;
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
 }
-.contactus-logo {
-  width: 40%;
-  max-width: 300px;
-}
+
 .contactus-logo img {
   max-width: 100%;
 }
 .contactus-icon {
   color: #df4846;
+}
+.request-form h1 {
+  text-align: left;
+}
+.top-hero {
+  text-align: center;
+}
+.request-form {
+  height: 410px;
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.8);
+  background-color: #cdb7a1;
 }

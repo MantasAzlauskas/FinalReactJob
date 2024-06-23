@@ -1,6 +1,5 @@
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #cdb7a1;
   padding: 20px;
 }
 
@@ -9,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 20px;
 }
 
 .contact-info,
@@ -16,6 +16,11 @@
 .social-links {
   flex: 1;
   margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  height: 200px;
+  align-content: center;
+  background-color: #f5f2ed;
 }
 
 h2 {
@@ -34,7 +39,7 @@ ul li {
 }
 
 ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

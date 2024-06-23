@@ -1,8 +1,7 @@
 import React from "react";
-
 import "../Main/Styles/Services.css";
-import Engine from "../../assests/Main/engine.png";
-import SpareParts from "../../assests/Main/spareparts.png";
+import Engine from "../../assests/Main/1_DhAWalmdXQgLd5-BMUsJKQ.png";
+import SpareParts from "../../assests/Main/diesel-engine-spare-parts-500x500.png";
 import EngineRepair from "../../assests/Main/enginerepair.jpg";
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,6 @@ const Services = () => {
             <img src={Engine} alt="enginephoto" className="img-card" />
           </Link>
           <div className="img-info">
-            <span className="img-description">Įvairiausi varikliai</span>
             <h2 className="img-title">Varikliai</h2>
           </div>
         </article>
@@ -27,7 +25,6 @@ const Services = () => {
           </Link>
 
           <div className="img-info">
-            <span className="img-description">Įvairiausios dalys</span>
             <h2 className="img-title">Dalys</h2>
           </div>
         </article>
@@ -42,7 +39,6 @@ const Services = () => {
           </Link>
 
           <div className="img-info">
-            <span className="img-description">Bet koks remontas</span>
             <h2 className="img-title">Remontas</h2>
           </div>
         </article>

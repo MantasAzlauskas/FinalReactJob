@@ -1,3 +1,143 @@
-.carousel-container {
-  width: 500px;
+.main-engine-container {
+  text-align: center;
+  padding-top: 20px;
+}
+.main-engine-container h1 {
+  color: #df4846;
+}
+
+.engines-container {
+  text-align: center;
+  padding: 0px 20px;
+  background-color: rgb(223, 213, 194, 0.2);
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.engines-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  overflow-x: scroll;
+  border-radius: 8px;
+  width: calc(300px * 4 + 60px); /* 4 items + gap */
+}
+
+.engines-info::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.backBtn,
+.nextBtn {
+  width: 50px;
+  color: white;
+  margin: 10px;
+  border: none;
+  background-color: #e9d5c2;
+}
+.backBtn:hover,
+.nextBtn:hover {
+  background-color: #f1e2d4;
+  border: 0;
+}
+
+.engine-item {
+  position: relative;
+  align-content: center;
+  min-width: 300px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #cdb7a1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.engine-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.engine-info {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.engine-info p {
+  font-size: 12px;
+}
+.engine-item:hover .engine-info {
+  opacity: 1;
+}
+.engine-info h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+.engine-item:hover .engine-info {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.engine-item:hover {
+  animation: remove-overflow 2s forwards;
+}
+.engine-item:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+.engine-item:not(:hover) .engine-info {
+  animation: remove-data 1s forwards;
+}
+@keyframes show-data {
+  50% {
+    transform: translateY(-2rem);
+  }
+  100% {
+    transform: translateY(-0rem);
+  }
+}
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-1rem);
+  }
+  50% {
+    transform: translateY(-4rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
 }
