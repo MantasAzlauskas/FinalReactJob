@@ -47,34 +47,33 @@ const AboutUs = () => {
             <div className="client-row">
               <div className="numbers">
                 {counterOn && (
-                  <CountUp start={0} end={150} duration={5} delay={0} />
+                  <CountUp start={0} end={0} duration={7} delay={0} />
                 )}
+              </div>
+              <span className="client-text">Blogų atsiliepimu</span>
+            </div>
+            <div className="client-row">
+              <div className="numbers">
                 ~
+                {counterOn && (
+                  <CountUp start={0} end={150} duration={7} delay={0} />
+                )}
               </div>
               <span className="client-text">Naujų klientų per mėnėsį</span>
             </div>
             <div className="client-row">
               <div className="numbers">
                 {counterOn && (
-                  <CountUp start={0} end={9999} duration={5} delay={0} />
+                  <CountUp start={0} end={742} duration={7} delay={0} />
                 )}
-                +
               </div>
-              <span className="client-text">Laimingų klientų</span>
+              <span className="client-text">Sutvarkytos technikos</span>
             </div>
+
             <div className="client-row">
               <div className="numbers">
                 {counterOn && (
-                  <CountUp start={0} end={9999} duration={5} delay={0} />
-                )}
-                +
-              </div>
-              <span className="client-text">Parduota dalių</span>
-            </div>
-            <div className="client-row">
-              <div className="numbers">
-                {counterOn && (
-                  <CountUp start={0} end={4123} duration={5} delay={0} />
+                  <CountUp start={0} end={4627} duration={7} delay={0} />
                 )}
               </div>
               <span className="client-text">Parduota variklių</span>
@@ -82,18 +81,20 @@ const AboutUs = () => {
             <div className="client-row">
               <div className="numbers">
                 {counterOn && (
-                  <CountUp start={0} end={843} duration={5} delay={0} />
+                  <CountUp start={0} end={9999} duration={7} delay={0} />
                 )}
+                +
               </div>
-              <span className="client-text">Sutvarkytos technikos</span>
+              <span className="client-text">Parduota detalių</span>
             </div>
             <div className="client-row">
               <div className="numbers">
                 {counterOn && (
-                  <CountUp start={0} end={843} duration={5} delay={0} />
+                  <CountUp start={0} end={9999} duration={7} delay={0} />
                 )}
+                +
               </div>
-              <span className="client-text">Sutvarkytos technikos</span>
+              <span className="client-text">Laimingų klientų</span>
             </div>
           </div>
         </div>

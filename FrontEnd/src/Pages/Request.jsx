@@ -2,7 +2,6 @@ import React from "react";
 import "../Pages/Styles/Request.css";
 
 const Request = () => {
-  return <p className="request"> BUS MODALAS "PRISIJUNGIMO" </p>;
+  return <h1>Sveiki</h1>;
 };
-
 export default Request;

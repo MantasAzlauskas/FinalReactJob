@@ -1,8 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import "../Header/Styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
           Susisiekite
         </Link>
       </nav>
-      <Link to="/requests">
+      <Link to="/login">
         <FontAwesomeIcon
           icon={faUser}
           className="navbar-icon"

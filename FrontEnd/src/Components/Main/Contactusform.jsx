@@ -14,8 +14,22 @@ import "../Main/Styles/Contactusform.css";
 const Contactusform = () => {
   return (
     <div className="main-hero-container">
-      <div className="top-hero">
-        <h1>Neradote reikiamos dalies ar variklio?</h1>
+      <div className="info-about-parts">
+        <h1>Informacija</h1>
+        <h3>
+          Jei radote Jums tinkamą variklį ar atsarginę dalį, ar turite klausimų
+          dėl konkretaus produkto - rašykite mums. Mūsų komanda pasiruošusi
+          padėti ir suteikti visą reikalingą informaciją.
+        </h3>
+        <h3>
+          Nepavyko rasti to, ko ieškojote? Susisiekite su mumis ir mes padėsime
+          Jums surasti reikiamą variklį ar atsarginę dalį pagal Jūsų poreikius.
+        </h3>
+        <h3>
+          Atkreipkite dėmesį, kad mes neturime prekių vietoje. Esame tik
+          užsakymus priimanti įmonė, todėl visas prekes užsakome specialiai
+          Jums, kai pateikiate užsakymą.
+        </h3>
       </div>
       <div className="hero">
         <form className="form-container">

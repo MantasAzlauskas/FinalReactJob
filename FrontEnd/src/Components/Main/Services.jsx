@@ -1,8 +1,5 @@
 import React from "react";
 import "../Main/Styles/Services.css";
-import Engine from "../../assests/Main/1_DhAWalmdXQgLd5-BMUsJKQ.png";
-import SpareParts from "../../assests/Main/diesel-engine-spare-parts-500x500.png";
-import EngineRepair from "../../assests/Main/enginerepair.jpg";
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -12,7 +9,13 @@ const Services = () => {
       <div className="img-container">
         <article className="img-article">
           <Link to="/engines">
-            <img src={Engine} alt="enginephoto" className="img-card" />
+            <img
+              src={
+                "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrVp2T8DJBonmZAhR5IoiE9VWnkzFwrvrT5EeJbDhKJA5aoswu"
+              }
+              alt="enginephoto"
+              className="img-card"
+            />
           </Link>
           <div className="img-info">
             <h2 className="img-title">Varikliai</h2>
@@ -21,7 +24,13 @@ const Services = () => {
 
         <article className="img-article">
           <Link to="/spareparts">
-            <img src={SpareParts} alt="sparepartsphoto" className="img-card" />
+            <img
+              src={
+                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNncA_27iDuAjR_uaYdhML-dUFVsKVL1J9JwZW_BFd6VZ6UOdu"
+              }
+              alt="sparepartsphoto"
+              className="img-card"
+            />
           </Link>
 
           <div className="img-info">
@@ -32,7 +41,9 @@ const Services = () => {
         <article className="img-article">
           <Link to="/repair">
             <img
-              src={EngineRepair}
+              src={
+                "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEnXbRt73eXTaueQECLpz7Mvjz_BM56mOz4Bw-Bn7koMEM5Ekj"
+              }
               alt="enginerepairphoto"
               className="img-card"
             />

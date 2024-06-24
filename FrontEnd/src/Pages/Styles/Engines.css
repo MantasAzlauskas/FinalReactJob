@@ -5,6 +5,15 @@
 .main-engine-container h1 {
   color: #df4846;
 }
+.engine-title {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: rgb(223, 213, 194, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+}
 
 .engines-container {
   text-align: center;
@@ -13,6 +22,7 @@
   border-radius: 10px;
   width: 90%;
   margin: 0 auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .engines-info {
@@ -140,4 +150,13 @@
   50% {
     overflow: hidden;
   }
+}
+.info-about-parts {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 20px;
+  background-color: rgb(223, 213, 194, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
 }

@@ -17,13 +17,13 @@ video {
 
 .content {
   position: absolute;
-  width: 70%;
+  width: 75%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   align-items: center;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   line-height: 40px;
 }
@@ -62,4 +62,16 @@ video {
 
 .scroll-to-top:hover {
   opacity: 1; /* Pilnai matomas užvedus pelę */
+}
+.info-about-parts {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 20px;
+  background-color: rgb(223, 213, 194, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+}
+.info-about-parts h1 {
+  color: #df4846;
 }

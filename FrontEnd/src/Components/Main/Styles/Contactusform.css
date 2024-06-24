@@ -1,6 +1,5 @@
 .main-hero-container h1 {
   text-align: center;
-  padding-top: 50px;
 }
 
 .hero {
@@ -51,10 +50,11 @@ button {
   border-radius: 10px;
   width: 70%;
   cursor: pointer;
+  font-size: 15px;
 }
 button:hover {
   border: 1px solid #df4846;
-  background-color: #f0f8ff;
+  background-color: #fdfdfc;
   color: #df4846;
 }
 input:focus ~ label,
@@ -62,7 +62,7 @@ input:valid ~ label,
 textarea:focus ~ label,
 textarea:valid ~ label {
   top: -29px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .row {
   display: flex;
@@ -76,7 +76,11 @@ textarea:valid ~ label {
 .contactus-text {
   width: 350px;
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
+  box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 10px;
+  background: #f5f2ed;
 }
 
 .contactus-logo img {
@@ -88,11 +92,8 @@ textarea:valid ~ label {
 .request-form h1 {
   text-align: left;
 }
-.top-hero {
-  text-align: center;
-}
 .request-form {
-  height: 410px;
+  height: 360px;
   text-align: center;
   padding: 30px 40px;
   border-radius: 8px;
