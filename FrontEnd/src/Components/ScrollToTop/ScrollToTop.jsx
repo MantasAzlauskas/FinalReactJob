@@ -6,11 +6,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      const isTop = window.scrollY > 100;
+      setShowButton(isTop);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,13 +23,11 @@ const ScrollToTop = () => {
     });
   };
 
-  return (
-    showButton && (
-      <button onClick={scrollToTop} className="scroll-to-top">
-        ↑
-      </button>
-    )
-  );
+  return showButton ? (
+    <button onClick={scrollToTop} className="scroll-to-top">
+      ↑
+    </button>
+  ) : null;
 };
 
 export default ScrollToTop;

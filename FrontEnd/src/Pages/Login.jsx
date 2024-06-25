@@ -10,7 +10,7 @@ function Login() {
   const navigate = useNavigate();
 
   const onLogin = () => {
-    if (username === "Finalproject" && password === "skanusvanduo") {
+    if (username === "Adminas" && password === "Adminas1230") {
       navigate("/requests");
     } else {
       setError("Neteisingas prisijungimo vardas arba slaptažodis");
