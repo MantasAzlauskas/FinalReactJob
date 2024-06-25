@@ -21,6 +21,7 @@
   height: 200px;
   align-content: center;
   background-color: #f5f2ed;
+  font-size: 13px;
 }
 
 h2 {
@@ -57,4 +58,20 @@ ul li a:hover {
 }
 .copyright {
   text-align: center;
+}
+@media screen and (max-width: 870px) {
+  .footer-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    column-gap: 10px;
+    height: auto;
+  }
+  .contact-info,
+  .working-hours,
+  .social-links {
+    width: 375px;
+    margin-top: 10px;
+  }
 }

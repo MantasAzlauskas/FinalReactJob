@@ -8,6 +8,7 @@
   height: 550px;
   position: relative;
   overflow: hidden;
+  background-color: rgb(205, 183, 161, 0.8);
 }
 
 video {
@@ -74,4 +75,46 @@ video {
 }
 .info-about-parts h1 {
   color: #df4846;
+}
+/* Responsive breakpoint'ai */
+
+@media (max-width: 576px) {
+  .main-container {
+    height: 250px;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .scroll-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .content {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .content {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .info-about-parts h1,
+  h3 {
+    text-align: center;
+    width: 375px;
+    margin: 0 auto;
+  }
+  .main-hero-container .info-about-parts {
+    width: 380px;
+  }
 }

@@ -68,25 +68,23 @@
   font-size: 20px;
   font-weight: 500;
 }
-/* 
-@media (max-width: 768px) {
-  .aboutus-content {
+@media screen and (max-width: 870px) {
+  .container-aboutus {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 375px;
   }
-
-  .aboutus-text,
-  .client-counter {
-    width: 100%;
+  .client-container {
+    width: 355px;
+    padding: 0;
   }
-
   .client-row {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    width: 350px;
   }
-
+  .numbers,
   .client-text {
-    margin-left: 0;
-    margin-top: 5px;
+    font-size: 20px;
+    text-align: left;
   }
-} */
+}

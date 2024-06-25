@@ -2,12 +2,21 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.menu-icon {
+  display: none; /* Numetame meniu pradžioje */
+  cursor: pointer;
+}
+
 .nav-links-container {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 .nav-links {
   text-decoration: none;
   color: #43515e;
@@ -15,6 +24,7 @@
   letter-spacing: 2px;
   position: relative;
 }
+
 .nav-links::after {
   content: "";
   position: absolute;
@@ -27,9 +37,82 @@
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
 }
+
 .nav-links:hover::after {
   transform: scaleX(1);
 }
+
 .navbar-icon {
   color: black;
+}
+
+/* Responsive stiliai */
+
+@media screen and (min-width: 1200px) and (max-width: 1640px) {
+  .header-title-small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header-title-small {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .header-title-small {
+    display: none;
+  }
+  .nav-links-container a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 899px) {
+  .header-logo-container {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block; /* Rodyti burgerio ikoną */
+  }
+
+  .nav-links-container {
+    display: none; /* Slepiami navigacijos linkai */
+    flex-direction: column;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    width: 20%;
+    background-color: #cdb7a1;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.8);
+
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+  }
+
+  .nav-links-container.active {
+    display: flex; /* Rodyti navigacijos linkus, kai burgerio meniu yra aktyvus */
+  }
+
+  .nav-links-container a {
+    display: block;
+    margin: 15px 0;
+    color: #43515e;
+  }
+
+  .header-title-small {
+    position: absolute;
+    top: -15px;
+    left: 35%;
+    color: black;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+  }
 }
